@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">Surfer Audit</string>
+
+    <!-- Navigation -->
+    <string name="nav_commits">Audit Fixes</string>
+    <string name="nav_scorecard">Scorecard</string>
+    <string name="nav_inspector">LHR JSON</string>
+    <string name="nav_help">Help</string>
+
+    <!-- Help & FAQ -->
+    <string name="help_title">Help &amp; FAQ</string>
+    <string name="help_subtitle">Common questions about Lighthouse LHR JSON audits, commit mapping, unified .patch exports, and live PageSpeed scans.</string>
+    <string name="help_search_hint">Search help topics…</string>
+
+    <!-- Header & Report Metadata -->
+    <string name="report_badge_step">Run 2 (Lighthouse JSON) · Step 3 / 3</string>
+    <string name="report_title">Lighthouse JSON audit report</string>
+    <string name="report_subtitle">Targeted code commits mapped directly to failing audits and DOM selectors in your Lighthouse Result (LHR) JSON report.</string>
+    <string name="categories_section_title">Categories improved with code</string>
+    <string name="categories_verified_subtitle">Static code audit · verified by commit coverage</string>
+
+    <!-- Categories -->
+    <string name="cat_all">All</string>
+    <string name="cat_performance">Performance</string>
+    <string name="cat_accessibility">Accessibility</string>
+    <string name="cat_best_practices">Best practices</string>
+    <string name="cat_seo">SEO</string>
+
+    <!-- Actions & Controls -->
+    <string name="action_select_all">Select all</string>
+    <string name="action_clear">Clear</string>
+    <string name="action_view_diff">View diff</string>
+    <string name="action_hide_diff">Hide diff</string>
+    <string name="action_download_patch">Download .patch</string>
+    <string name="action_create_pr">Create pull request</string>
+    <string name="action_copy">Copy</string>
+    <string name="action_share">Share</string>
+    <string name="action_save_file">Save .patch file</string>
+    <string name="action_open_github">Open GitHub</string>
+    <string name="search_commits_hint">Filter commits, files, or DOM selectors…</string>
+
+    <!-- Commit Detail Labels -->
+    <string name="label_category_audit_improved">Category and audit improved</string>
+    <string name="label_json_target_node">JSON target node</string>
+    <string name="label_modified_files">Modified files</string>
+    <string name="label_tap_to_copy_selector">Tap selector to copy</string>
+
+    <!-- Selection Bar -->
+    <string name="selected_count_format">%1$d of %2$d selected</string>
+    <string name="no_commits_selected_hint">Select at least one commit to export a patch or PR</string>
+
+    <!-- LHR Inspector / Import -->
+    <string name="inspector_title">Lighthouse LHR JSON &amp; Live Scan</string>
+    <string name="inspector_subtitle">Import a local Lighthouse Result (.json) file, paste raw LHR JSON, or run a live PageSpeed Insights audit on any public URL.</string>
+    <string name="action_import_json_file">Import LHR .json file</string>
+    <string name="action_paste_json">Paste LHR JSON</string>
+    <string name="action_run_live_audit">Run live audit</string>
+    <string name="url_input_label">Target website URL</string>
+    <string name="url_input_placeholder">https://example.com</string>
+    <string name="strategy_mobile">Mobile</string>
+    <string name="strategy_desktop">Desktop</string>
+    <string name="saved_reports_title">Saved audit reports</string>
+    <string name="badge_active">Active</string>
+    <string name="badge_baseline">Baseline</string>
+
+    <!-- Scorecard -->
+    <string name="scorecard_title">LHR Category Scorecards</string>
+    <string name="scorecard_subtitle">Lighthouse scores and failing audit coverage mapped to DOM selectors.</string>
+    <string name="failing_audits_title">Failing audits &amp; selector coverage</string>
+
+    <!-- Modals & Feedback -->
+    <string name="patch_sheet_title">Export unified .patch</string>
+    <string name="pr_sheet_title">Pull request summary</string>
+    <string name="paste_json_dialog_title">Paste Lighthouse LHR JSON</string>
+    <string name="paste_json_hint">Paste raw Lighthouse JSON or PageSpeed v5 JSON…</string>
+    <string name="action_parse_import">Parse &amp; Save</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="msg_copied_clipboard">Copied to clipboard</string>
+    <string name="msg_patch_saved">Patch saved successfully</string>
+    <string name="msg_report_imported">Lighthouse report imported</string>
+    <string name="msg_invalid_url">Enter a valid http:// or https:// URL</string>
+    <string name="msg_empty_commits">No commits match your current filter</string>
+</resources>

@@ -1,0 +1,6 @@
+{
+  "name": "Surfer Audit",
+  "description": "Lighthouse JSON audit report inspector, commit coverage explorer, and unified patch exporter for web performance, accessibility, best practices, and SEO.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

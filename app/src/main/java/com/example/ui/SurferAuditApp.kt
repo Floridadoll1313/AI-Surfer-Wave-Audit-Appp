@@ -19,9 +19,11 @@ import androidx.compose.material.icons.automirrored.outlined.HelpOutline
 import androidx.compose.material.icons.filled.Build
 import androidx.compose.material.icons.filled.Code
 import androidx.compose.material.icons.filled.Speed
+import androidx.compose.material.icons.filled.Waves
 import androidx.compose.material.icons.outlined.Build
 import androidx.compose.material.icons.outlined.Code
 import androidx.compose.material.icons.outlined.Speed
+import androidx.compose.material.icons.outlined.Waves
 import androidx.compose.material3.Icon
 import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarItem
@@ -58,10 +60,12 @@ import com.example.ui.screens.CommitsScreen
 import com.example.ui.screens.HelpFaqScreen
 import com.example.ui.screens.LhrInspectorScreen
 import com.example.ui.screens.ScorecardScreen
+import com.example.ui.screens.WaveCheckScreen
 
 const val ROUTE_COMMITS = "commits"
 const val ROUTE_SCORECARD = "scorecard"
 const val ROUTE_INSPECTOR = "inspector"
+const val ROUTE_WAVE_CHECK = "wave_check"
 const val ROUTE_HELP = "help"
 
 private data class NavDestinationItem(
@@ -91,6 +95,12 @@ private val TopLevelDestinations = listOf(
         unselectedIcon = Icons.Outlined.Code,
     ),
     NavDestinationItem(
+        route = ROUTE_WAVE_CHECK,
+        labelRes = R.string.nav_wave_check,
+        selectedIcon = Icons.Filled.Waves,
+        unselectedIcon = Icons.Outlined.Waves,
+    ),
+    NavDestinationItem(
         route = ROUTE_HELP,
         labelRes = R.string.nav_help,
         selectedIcon = Icons.AutoMirrored.Filled.Help,
@@ -101,6 +111,7 @@ private val TopLevelDestinations = listOf(
 @Composable
 fun SurferAuditApp(
     viewModel: AuditViewModel = viewModel(),
+    waveCheckViewModel: WaveCheckViewModel = viewModel(),
 ) {
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
     val navController = rememberNavController()
@@ -331,6 +342,10 @@ fun SurferAuditApp(
                             onDeleteReport = viewModel::deleteReport,
                             onClearError = viewModel::clearScanError,
                         )
+                    }
+
+                    composable(ROUTE_WAVE_CHECK) {
+                        WaveCheckScreen(viewModel = waveCheckViewModel)
                     }
 
                     composable(ROUTE_HELP) {
